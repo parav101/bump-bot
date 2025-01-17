@@ -9,7 +9,6 @@ client.on('ready', async () => {
     
     async function bump() {
         await channel.sendSlash('302050872383242240', 'bump')
-        // await channel.sendSlash('1159147139960676422', 'bump')
         console.count('Bumped!')
     }
 
