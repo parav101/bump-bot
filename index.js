@@ -28,7 +28,7 @@ client.on('ready', async () => {
     loop(channel1, 'Server 1')
     
     // Add a delay 
-    const delayMinutes = Math.floor(Math.random() * 1); // Random 5-1 minutes
+    const delayMinutes = Math.floor(Math.random() * 5) + 1; // Random 1-5 minutes
     const delayMilliseconds = delayMinutes * 60 * 1000;
     
     console.log(`Will start bumping Server 2 in ${delayMinutes} minutes`)
