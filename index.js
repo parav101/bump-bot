@@ -11,7 +11,7 @@ client.on('ready', async () => {
     
     async function bump(channel, serverName) {
         await channel.sendSlash('302050872383242240', 'bump')
-        // console.count(`Bumped ${serverName}!`)
+        console.count(`Bumped ${serverName}!`)
     }
 
     function loop(channel, serverName) {
@@ -31,7 +31,7 @@ client.on('ready', async () => {
     const delayMinutes = Math.floor(Math.random() * 1); // Random 5-1 minutes
     const delayMilliseconds = delayMinutes * 60 * 1000;
     
-    // console.log(`Will start bumping Server 2 in ${delayMinutes} minutes`)
+    console.log(`Will start bumping Server 2 in ${delayMinutes} minutes`)
     
     setTimeout(() => {
         bump(channel2, 'Server 2')
